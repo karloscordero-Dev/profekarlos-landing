@@ -104,8 +104,8 @@ const Hero = () => {
                                 src="https://labxv947ti02pvvl.public.blob.vercel-storage.com/landing-page-video.m4v"
                                 autoPlay
                                 loop
-                                muted
                                 playsInline
+                                controls
                                 className="w-full h-full object-cover"
                             />
 
