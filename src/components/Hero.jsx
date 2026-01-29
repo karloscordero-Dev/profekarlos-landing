@@ -109,11 +109,7 @@ const Hero = () => {
                                 className="w-full h-full object-cover"
                             />
 
-                            {/* Mask Fade Effect */}
-                            <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"></div>
-                            <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-brand-dark via-transparent to-brand-dark/20"></div>
-                            <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-brand-dark via-transparent to-transparent"></div>
-                            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
+                            {/* Clean Video - No Mask/Overlays */}
                         </div>
                     </motion.div>
 

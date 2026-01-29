@@ -36,7 +36,7 @@ const Testimonials = () => {
                             <img
                                 src={img}
                                 alt={`Testimonio ${index + 1}`}
-                                className="w-full h-auto block"
+                                className="w-full h-auto max-h-[50vh] object-contain md:max-h-none block"
                                 loading="lazy"
                             />
                         </motion.div>
@@ -53,7 +53,7 @@ const Testimonials = () => {
                         <img
                             src={images[2]}
                             alt="Testimonio 3"
-                            className="w-full h-auto block"
+                            className="w-full h-auto max-h-[50vh] object-contain md:max-h-none block"
                             loading="lazy"
                         />
                     </motion.div>
