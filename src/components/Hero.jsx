@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -29,16 +29,16 @@ const Hero = () => {
                         <span className="text-brand-neon text-xs font-bold uppercase tracking-widest">Admisión 2026 Abierta</span>
                     </div>
 
-                    <h1 className="font-serif font-black text-5xl md:text-7xl leading-[1.1] text-white tracking-tight mb-2">
+                    <h1 className="font-serif font-black text-4xl md:text-6xl lg:text-7xl leading-[1.1] text-white tracking-tight mb-2">
                         Perfecciona tu nivel para la PAES de Competencia Lectora con mi método y alcanza el puntaje que mereces.
                     </h1>
                 </motion.div>
 
                 {/* Bottom: 2 Columns Layout */}
-                <div className="grid lg:grid-cols-2 gap-16 items-start">
+                <div className="grid lg:grid-cols-10 gap-12 lg:gap-16 items-center">
 
                     {/* Left: Subtitle & Buttons */}
-                    <div className="space-y-8 flex flex-col justify-center h-full">
+                    <div className="lg:col-span-4 space-y-8 flex flex-col justify-center h-full">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -88,31 +88,32 @@ const Hero = () => {
                         </motion.div>
                     </div>
 
-                    {/* Right: Video Placeholder */}
+                    {/* Right: Video Container */}
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
+                        initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                        className="relative"
+                        className="lg:col-span-6 relative"
                     >
-                        <div className="absolute -inset-4 bg-gradient-to-tr from-brand-neon/20 to-brand-red/20 rounded-[2.5rem] blur-2xl opacity-40"></div>
+                        <div className="absolute -inset-4 bg-gradient-to-tr from-brand-neon/10 to-brand-red/10 rounded-[2.5rem] blur-3xl opacity-30"></div>
 
-                        <div className="relative aspect-[4/5] md:aspect-square bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[2rem] overflow-hidden flex flex-col items-center justify-center group cursor-pointer">
-                            {/* Frosted Glass Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                        <div className="relative aspect-video lg:aspect-[16/10] bg-black rounded-[2rem] overflow-hidden border border-white/10 group">
+                            {/* Video Element */}
+                            <video
+                                src="https://labxv947ti02pvvl.public.blob.vercel-storage.com/landing-page-video.m4v"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="w-full h-full object-cover"
+                            />
 
-                            {/* Play Button */}
-                            <div className="relative z-10 w-24 h-24 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center group-hover:scale-110 transition-transform duration-500 shadow-2xl">
-                                <div className="w-16 h-16 rounded-full bg-brand-neon flex items-center justify-center text-brand-dark pl-1 shadow-[0_0_30px_rgba(204,255,0,0.4)]">
-                                    <Play fill="currentColor" className="w-8 h-8" />
-                                </div>
-                            </div>
-
-                            <div className="relative z-10 mt-8 text-center px-8">
-                                <h3 className="text-white font-serif font-bold text-2xl mb-2">Manifiesto 2026</h3>
-                                <p className="text-gray-400 text-sm">Descubre por qué el reforzamiento tradicional ha muerto.</p>
-                            </div>
+                            {/* Mask Fade Effect */}
+                            <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"></div>
+                            <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-brand-dark via-transparent to-brand-dark/20"></div>
+                            <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-brand-dark via-transparent to-transparent"></div>
+                            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
                         </div>
                     </motion.div>
 
