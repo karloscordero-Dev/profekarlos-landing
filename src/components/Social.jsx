@@ -11,7 +11,7 @@ const Social = () => {
         <section className="bg-slate-900 border-t border-white/5 py-20 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
 
-                <h2 className="font-serif font-bold text-3xl text-white mb-4">Hub Social</h2>
+                <h2 className="font-serif font-bold text-3xl text-white mb-4 italic">Cónoceme más en mis redes sociales</h2>
                 <p className="text-slate-400 mb-12 font-light">Sígueme para contenido estratégico y literatura diaria.</p>
 
                 <div className="flex justify-center gap-8">
