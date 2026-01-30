@@ -10,27 +10,13 @@ const Programs = () => {
             price: "$612.000",
             discount: "60% OFF",
             features: [
+                "Material exclusivo PAES 2026",
+                "Personalización Profunda",
                 "Feedback Estratégico personalizado",
                 "Coaching de Élite: Motivación y Ansiedad",
-                "Personalización Profunda: Seguimiento individual",
-                "Material exclusivo PAES 2026",
                 "5 cupos por grupo"
             ],
             link: "https://encuadrado.com/p/carlos-cordero-lizana/s/programa-elite-intensivo-paes-de-invierno"
-        },
-        {
-            title: "Premium Anual",
-            subtitle: "El Camino Seguro a la Universidad",
-            price: "$690.000",
-            discount: "70% OFF",
-            features: [
-                "Personalización Profunda: Seguimiento individual",
-                "Coaching Vocacional y manejo de estrés",
-                "Feedback de Ensayos: Análisis exhaustivo",
-                "Material exclusivo PAES 2026",
-                "5 cupos por grupo"
-            ],
-            link: "https://encuadrado.com/p/carlos-cordero-lizana/s/plan-anual-premium-paes-competencia-lectora"
         },
         {
             title: "Plan Anual General PAES",
@@ -40,7 +26,7 @@ const Programs = () => {
             features: [
                 "34 sesiones de entrenamiento técnico",
                 "Ensayos mensuales PAES",
-                "Acceso a bitácora de estrategias",
+                "Material Premium",
                 "15 cupos por grupo"
             ],
             highlight: true,
@@ -74,7 +60,7 @@ const Programs = () => {
                     <p className="text-gray-400">Cupos extremadamente limitados. Solo para quienes toman esto en serio.</p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {programs.map((prog, i) => (
                         <motion.div
                             key={i}
