@@ -95,6 +95,7 @@ const Programs = () => {
 
                             <a
                                 href={prog.link}
+                                onClick={() => window.fbq('track', 'Lead')}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-full py-4 rounded-xl bg-white text-brand-dark font-bold hover:bg-brand-accent-gold transition-colors flex items-center justify-center gap-2 group-hover:gap-4 duration-300 mt-auto"

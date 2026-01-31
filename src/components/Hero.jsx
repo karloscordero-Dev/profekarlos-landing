@@ -51,12 +51,12 @@ const Hero = () => {
 
                             <div className="flex flex-col sm:flex-row gap-5">
                                 <motion.a
-                                    href="https://encuadrado.com/p/carlos-cordero-lizana"
+                                    href="#programas"
+                                    onClick={() => window.fbq('track', 'Lead')}
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="group relative bg-brand-neon text-brand-dark px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-3 overflow-hidden shadow-[0_0_40px_-10px_rgba(204,255,0,0.3)]"
+                                    className="group relative px-8 py-4 bg-brand-accent-gold text-brand-dark font-bold rounded-xl overflow-hidden hover:scale-105 transition-transform duration-300"
                                 >
-                                    <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                                     <span className="relative">POSTULAR A UN CUPO</span>
                                     <ArrowRight className="w-5 h-5 relative group-hover:translate-x-1 transition-transform" />
                                 </motion.a>
