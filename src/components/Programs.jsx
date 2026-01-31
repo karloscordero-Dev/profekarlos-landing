@@ -7,7 +7,7 @@ const Programs = () => {
         {
             title: "Egresados Élite: Intensivo",
             subtitle: "Recuperación y Máximo Rendimiento",
-            price: "$612.000",
+            price: "",
             discount: "60% OFF",
             features: [
                 "Material exclusivo PAES 2026",
@@ -21,7 +21,7 @@ const Programs = () => {
         {
             title: "Plan Anual General PAES",
             subtitle: "Entrenamiento Técnico Eficiente",
-            price: "$449.000",
+            price: "",
             discount: "60% OFF",
             features: [
                 "34 sesiones de entrenamiento técnico",
@@ -35,7 +35,7 @@ const Programs = () => {
         {
             title: "Bases Lectoras: 1º y 2º Medio",
             subtitle: "Construcción de Cimientos Académicos",
-            price: "$354.000",
+            price: "",
             discount: "4 meses",
             features: [
                 "Potenciar el NEM: Mejora tu promedio",
@@ -80,8 +80,8 @@ const Programs = () => {
                             <p className="text-xs text-brand-neon font-bold uppercase tracking-wide mb-4 min-h-[2rem] flex items-start">{prog.subtitle}</p>
 
                             <div className="flex items-baseline gap-2 mb-6 border-b border-white/10 pb-4">
-                                <span className="text-2xl lg:text-3xl font-black text-brand-accent-gold">{prog.price}</span>
-                                <span className="text-[10px] text-brand-neon font-bold px-2 py-1 bg-brand-neon/10 rounded-full">{prog.discount}</span>
+                                <span className="text-2xl lg:text-3xl font-black text-brand-accent-gold invisible">{prog.price}</span>
+                                <span className="text-[10px] text-brand-neon font-bold px-2 py-1 bg-brand-neon/10 rounded-full invisible">{prog.discount}</span>
                             </div>
 
                             <ul className="space-y-3 mb-8 grow">
