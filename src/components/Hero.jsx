@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
+    const [isPlaying, setIsPlaying] = useState(false);
     return (
         <section className="relative min-h-screen flex flex-col pt-40 pb-20 overflow-hidden">
 
@@ -99,14 +100,51 @@ const Hero = () => {
                         <div className="absolute -inset-4 bg-gradient-to-tr from-brand-neon/10 to-brand-red/10 rounded-[2.5rem] blur-3xl opacity-30"></div>
 
                         <div className="relative aspect-video bg-black rounded-[2rem] overflow-hidden border border-white/10 group shadow-2xl">
-                            {/* YouTube Embed */}
-                            <iframe
-                                src="https://www.youtube.com/embed/5l4O5tQz0W0?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1&playsinline=1"
-                                title="Preparación PAES Profe Karlos"
-                                className="w-full h-full border-none pointer-events-auto"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                            ></iframe>
+                            {!isPlaying ? (
+                                <div
+                                    className="relative w-full h-full cursor-pointer group/video"
+                                    onClick={() => setIsPlaying(true)}
+                                >
+                                    {/* Thumbnail Facade */}
+                                    <img
+                                        src="https://img.youtube.com/vi/5l4O5tQz0W0/maxresdefault.jpg"
+                                        alt="Profe Karlos - Preparación PAES"
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover/video:scale-105"
+                                    />
+
+                                    {/* Glass Overlay */}
+                                    <div className="absolute inset-0 bg-brand-dark/30 group-hover/video:bg-brand-dark/10 transition-colors duration-300"></div>
+
+                                    {/* Play Button - High End Design */}
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <motion.div
+                                            initial={{ scale: 0.9, opacity: 0 }}
+                                            animate={{ scale: 1, opacity: 1 }}
+                                            whileHover={{ scale: 1.15 }}
+                                            whileTap={{ scale: 0.95 }}
+                                            className="w-20 h-20 md:w-28 md:h-28 bg-brand-neon text-brand-dark rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(0,255,255,0.4)] group-hover/video:shadow-[0_0_60px_rgba(0,255,255,0.6)] mix-blend-screen transition-all duration-500"
+                                        >
+                                            <svg viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 md:w-14 md:h-14 ml-1">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </motion.div>
+                                    </div>
+
+                                    {/* Pulse Effect */}
+                                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                        <div className="w-20 h-20 md:w-28 md:h-28 rounded-full border-4 border-brand-neon/30 animate-ping"></div>
+                                    </div>
+                                </div>
+                            ) : (
+                                /* YouTube Embed - Loaded On Demand */
+                                <iframe
+                                    src="https://www.youtube.com/embed/5l4O5tQz0W0?autoplay=1&controls=1&rel=0&modestbranding=1&playsinline=1"
+                                    title="Preparación PAES Profe Karlos"
+                                    className="w-full h-full border-none"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                ></iframe>
+                            )}
                         </div>
                     </motion.div>
 
