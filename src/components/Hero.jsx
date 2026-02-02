@@ -98,18 +98,15 @@ const Hero = () => {
                     >
                         <div className="absolute -inset-4 bg-gradient-to-tr from-brand-neon/10 to-brand-red/10 rounded-[2.5rem] blur-3xl opacity-30"></div>
 
-                        <div className="relative aspect-video lg:aspect-[16/10] bg-black rounded-[2rem] overflow-hidden border border-white/10 group">
-                            {/* Video Element */}
-                            <video
-                                src="https://labxv947ti02pvvl.public.blob.vercel-storage.com/landing-page-video.m4v"
-                                autoPlay
-                                loop
-                                playsInline
-                                controls
-                                className="w-full h-full object-cover"
-                            />
-
-                            {/* Clean Video - No Mask/Overlays */}
+                        <div className="relative aspect-video bg-black rounded-[2rem] overflow-hidden border border-white/10 group shadow-2xl">
+                            {/* YouTube Embed */}
+                            <iframe
+                                src="https://www.youtube.com/embed/5l4O5tQz0W0?autoplay=1&mute=1&controls=1&loop=1&rel=0&playsinline=1&playlist=5l4O5tQz0W0"
+                                title="Preparación PAES Profe Karlos"
+                                className="w-full h-full border-none pointer-events-auto"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
                         </div>
                     </motion.div>
 
