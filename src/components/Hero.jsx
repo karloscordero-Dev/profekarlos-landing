@@ -101,7 +101,7 @@ const Hero = () => {
                         <div className="relative aspect-video bg-black rounded-[2rem] overflow-hidden border border-white/10 group shadow-2xl">
                             {/* YouTube Embed */}
                             <iframe
-                                src="https://www.youtube.com/embed/5l4O5tQz0W0?autoplay=1&mute=1&controls=1&loop=1&rel=0&playsinline=1&playlist=5l4O5tQz0W0"
+                                src="https://www.youtube.com/embed/5l4O5tQz0W0?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1&playsinline=1"
                                 title="Preparación PAES Profe Karlos"
                                 className="w-full h-full border-none pointer-events-auto"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
