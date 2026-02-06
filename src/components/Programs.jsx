@@ -7,8 +7,8 @@ const Programs = () => {
         {
             title: "Egresados Élite: Intensivo",
             subtitle: "Recuperación y Máximo Rendimiento",
-            price: "$612.000",
-            discount: "60% OFF",
+            price: "$639.000",
+            discount: "58% OFF",
             features: [
                 "Material exclusivo PAES 2026",
                 "Personalización Profunda",
