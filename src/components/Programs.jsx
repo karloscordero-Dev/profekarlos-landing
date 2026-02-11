@@ -9,6 +9,7 @@ const Programs = () => {
             subtitle: "Recuperación y Máximo Rendimiento",
             price: "$639.000",
             discount: "58% OFF",
+            urgency: "¡ÚLTIMO CUPO DISPONIBLE!",
             features: [
                 "Material exclusivo PAES 2026",
                 "Personalización Profunda",
@@ -78,6 +79,14 @@ const Programs = () => {
 
                             <h3 className="font-serif font-bold text-xl md:text-2xl text-white mb-1 leading-tight min-h-[3.5rem] flex items-end">{prog.title}</h3>
                             <p className="text-xs text-brand-neon font-bold uppercase tracking-wide mb-4 min-h-[2rem] flex items-start">{prog.subtitle}</p>
+
+                            {prog.urgency && (
+                                <div className="mb-4">
+                                    <span className="inline-block px-3 py-1 bg-brand-red/20 text-brand-red text-[10px] font-black uppercase tracking-widest rounded-full border border-brand-red/30 animate-pulse">
+                                        {prog.urgency}
+                                    </span>
+                                </div>
+                            )}
 
                             <div className="flex items-baseline gap-2 mb-6 border-b border-white/10 pb-4">
                                 <span className="text-2xl lg:text-3xl font-black text-brand-accent-gold">{prog.price}</span>
