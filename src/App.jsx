@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import LaRealidad from './components/LaRealidad';
 import Solution from './components/Solution';
 import Testimonials from './components/Testimonials';
+import YouTubeMethod from './components/YouTubeMethod';
 import Programs from './components/Programs';
 import Social from './components/Social';
 
@@ -17,6 +18,7 @@ function App() {
                 <LaRealidad />
                 <Solution />
                 <Testimonials />
+                <YouTubeMethod />
                 <Programs />
                 <Social />
             </main>
