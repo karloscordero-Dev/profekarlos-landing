@@ -49,7 +49,7 @@ const Programs = () => {
         },
         {
             title: "Egresados Élite: Intensivo",
-            subtitle: "Recuperación y Máximo Rendimiento",
+            subtitle: "Recuperación y Máximo Rendimiento | Marzo-Junio",
             price: "$639.000",
             discount: "58% OFF",
             urgency: "¡ÚLTIMO CUPO DISPONIBLE!",
@@ -98,11 +98,10 @@ const Programs = () => {
 
                             {prog.urgency && (
                                 <div className="mb-4">
-                                    <span className={`inline-block px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded-full border animate-pulse ${
-                                        prog.urgencyVariant === 'yellow' 
-                                        ? 'bg-brand-accent-gold/20 text-brand-accent-gold border-brand-accent-gold/30' 
-                                        : 'bg-brand-red/20 text-brand-red border-brand-red/30'
-                                    }`}>
+                                    <span className={`inline-block px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded-full border animate-pulse ${prog.urgencyVariant === 'yellow'
+                                            ? 'bg-brand-accent-gold/20 text-brand-accent-gold border-brand-accent-gold/30'
+                                            : 'bg-brand-red/20 text-brand-red border-brand-red/30'
+                                        }`}>
                                         {prog.urgency}
                                     </span>
                                 </div>
