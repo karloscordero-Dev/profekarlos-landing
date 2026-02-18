@@ -5,19 +5,17 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 const Programs = () => {
     const programs = [
         {
-            title: "Egresados Élite: Intensivo",
-            subtitle: "Recuperación y Máximo Rendimiento",
-            price: "$639.000",
-            discount: "58% OFF",
-            urgency: "¡ÚLTIMO CUPO DISPONIBLE!",
+            title: "Bases Lectoras: 1º y 2º Medio",
+            subtitle: "Construcción de Cimientos Académicos",
+            price: "$354.000",
+            discount: "4 meses",
             features: [
-                "Material exclusivo PAES 2026",
-                "Personalización Profunda",
-                "Feedback Estratégico personalizado",
-                "Coaching de Élite: Motivación y Ansiedad",
-                "5 cupos por grupo"
+                "Potenciar el NEM: Mejora tu promedio",
+                "Práctica de redacción académica",
+                "Base Técnica DEMRE: Entrenamiento temprano",
+                "15 cupos por grupo"
             ],
-            link: "https://encuadrado.com/p/carlos-cordero-lizana/s/programa-elite-intensivo-paes-de-invierno"
+            link: "https://encuadrado.com/p/carlos-cordero-lizana/s/bases-de-comprension-lectora-entrenamiento-estrategico-1deg-y-2deg-medio"
         },
         {
             title: "Plan Anual General PAES",
@@ -34,17 +32,35 @@ const Programs = () => {
             link: "https://encuadrado.com/p/carlos-cordero-lizana/s/plan-anual-general-paes-competencia-lectora"
         },
         {
-            title: "Bases Lectoras: 1º y 2º Medio",
-            subtitle: "Construcción de Cimientos Académicos",
-            price: "$354.000",
-            discount: "4 meses",
+            title: "PAES Premium Anual",
+            subtitle: "3º y 4º Medio | Abril a Noviembre",
+            price: "$690.000",
+            discount: "45% OFF",
+            urgency: "3 cupos disponibles",
+            urgencyVariant: "yellow",
             features: [
-                "Potenciar el NEM: Mejora tu promedio",
-                "Práctica de redacción académica",
-                "Base Técnica DEMRE: Entrenamiento temprano",
-                "15 cupos por grupo"
+                "Material exclusivo PAES 2026",
+                "Personalización Profunda",
+                "Feedback Estratégico personalizado",
+                "Coaching de Élite: Motivación y Ansiedad",
+                "Grupos ultra-reducidos (Solo 5 cupos)"
             ],
-            link: "https://encuadrado.com/p/carlos-cordero-lizana/s/bases-de-comprension-lectora-entrenamiento-estrategico-1deg-y-2deg-medio"
+            link: "https://encuadrado.com/p/carlos-cordero-lizana/s/plan-anual-premium-paes-competencia-lectora"
+        },
+        {
+            title: "Egresados Élite: Intensivo",
+            subtitle: "Recuperación y Máximo Rendimiento",
+            price: "$639.000",
+            discount: "58% OFF",
+            urgency: "¡ÚLTIMO CUPO DISPONIBLE!",
+            features: [
+                "Material exclusivo PAES 2026",
+                "Personalización Profunda",
+                "Feedback Estratégico personalizado",
+                "Coaching de Élite: Motivación y Ansiedad",
+                "5 cupos por grupo"
+            ],
+            link: "https://encuadrado.com/p/carlos-cordero-lizana/s/programa-elite-intensivo-paes-de-invierno"
         }
     ];
 
@@ -61,7 +77,7 @@ const Programs = () => {
                     <p className="text-gray-400">Cupos extremadamente limitados. Solo para quienes toman esto en serio.</p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {programs.map((prog, i) => (
                         <motion.div
                             key={i}
@@ -82,7 +98,11 @@ const Programs = () => {
 
                             {prog.urgency && (
                                 <div className="mb-4">
-                                    <span className="inline-block px-3 py-1 bg-brand-red/20 text-brand-red text-[10px] font-black uppercase tracking-widest rounded-full border border-brand-red/30 animate-pulse">
+                                    <span className={`inline-block px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded-full border animate-pulse ${
+                                        prog.urgencyVariant === 'yellow' 
+                                        ? 'bg-brand-accent-gold/20 text-brand-accent-gold border-brand-accent-gold/30' 
+                                        : 'bg-brand-red/20 text-brand-red border-brand-red/30'
+                                    }`}>
                                         {prog.urgency}
                                     </span>
                                 </div>
