@@ -36,8 +36,8 @@ const Programs = () => {
             subtitle: "3º y 4º Medio | Abril a Noviembre",
             price: "$690.000",
             discount: "45% OFF",
-            urgency: "3 cupos disponibles",
-            urgencyVariant: "yellow",
+            urgency: "1 cupo disponible",
+            urgencyVariant: "red",
             features: [
                 "Material exclusivo PAES 2026",
                 "Personalización Profunda",
@@ -52,7 +52,7 @@ const Programs = () => {
             subtitle: "Recuperación y Máximo Rendimiento | Marzo-Junio",
             price: "$639.000",
             discount: "58% OFF",
-            urgency: "¡ÚLTIMO CUPO DISPONIBLE!",
+            urgency: "AGOTADO",
             features: [
                 "Material exclusivo PAES 2026",
                 "Personalización Profunda",
