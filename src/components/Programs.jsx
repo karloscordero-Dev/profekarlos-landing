@@ -1,140 +1,74 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const Programs = () => {
-    const programs = [
-        {
-            title: "Bases Lectoras: 1º y 2º Medio",
-            subtitle: "Construcción de Cimientos Académicos",
-            price: "$354.000",
-            discount: "4 meses",
-            features: [
-                "Potenciar el NEM: Mejora tu promedio",
-                "Práctica de redacción académica",
-                "Base Técnica DEMRE: Entrenamiento temprano",
-                "15 cupos por grupo"
-            ],
-            link: "https://encuadrado.com/p/carlos-cordero-lizana/s/bases-de-comprension-lectora-entrenamiento-estrategico-1deg-y-2deg-medio"
-        },
-        {
-            title: "Plan Anual General PAES",
-            subtitle: "Entrenamiento Técnico Eficiente",
-            price: "$449.000",
-            discount: "60% OFF",
-            features: [
-                "34 sesiones de entrenamiento técnico",
-                "Ensayos mensuales PAES",
-                "Material Premium",
-                "15 cupos por grupo"
-            ],
-            highlight: true,
-            link: "https://encuadrado.com/p/carlos-cordero-lizana/s/plan-anual-general-paes-competencia-lectora"
-        },
-        {
-            title: "PAES Premium Anual",
-            subtitle: "3º y 4º Medio | Abril a Noviembre",
-            price: "$690.000",
-            discount: "45% OFF",
-            urgency: "1 cupo disponible",
-            urgencyVariant: "red",
-            features: [
-                "Material exclusivo PAES 2026",
-                "Personalización Profunda",
-                "Feedback Estratégico personalizado",
-                "Coaching de Élite: Motivación y Ansiedad",
-                "Grupos ultra-reducidos (Solo 5 cupos)"
-            ],
-            link: "https://encuadrado.com/p/carlos-cordero-lizana/s/plan-anual-premium-paes-competencia-lectora"
-        },
-        {
-            title: "Egresados Élite: Intensivo",
-            subtitle: "Recuperación y Máximo Rendimiento | Marzo-Junio",
-            price: "$639.000",
-            discount: "58% OFF",
-            urgency: "AGOTADO",
-            features: [
-                "Material exclusivo PAES 2026",
-                "Personalización Profunda",
-                "Feedback Estratégico personalizado",
-                "Coaching de Élite: Motivación y Ansiedad",
-                "5 cupos por grupo"
-            ],
-            link: "https://encuadrado.com/p/carlos-cordero-lizana/s/programa-elite-intensivo-paes-de-invierno"
-        }
+    const features = [
+        "32 sesiones.",
+        "Ensayos mensuales PAES.",
+        "Material exclusivo PAES 2026.",
+        "Bitácora de estudio ProfeKarlos."
     ];
 
     return (
         <section id="programas" className="relative py-32 bg-brand-dark">
             <div className="max-w-7xl mx-auto px-6">
+                
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-20"
+                    className="text-center mb-16"
                 >
-                    <h2 className="font-serif font-black text-4xl md:text-5xl text-white mb-4">Programas 2026</h2>
-                    <p className="text-gray-400">Cupos extremadamente limitados. Solo para quienes toman esto en serio.</p>
+                    <h2 className="font-serif font-black text-4xl md:text-5xl text-white">
+                        Programas 2026
+                    </h2>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {programs.map((prog, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, y: 50 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
-                            className={`relative p-8 rounded-2xl border ${prog.highlight ? 'border-brand-accent-gold bg-brand-accent-gold/5' : 'border-white/10 bg-white/5'} backdrop-blur-sm group hover:border-brand-accent-gold hover:shadow-[0_0_30px_rgba(255,215,0,0.15)] transition-all duration-300 h-full flex flex-col`}
-                        >
-                            {prog.highlight && (
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-accent-gold text-brand-dark px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                                    Más Popular
-                                </div>
-                            )}
+                <div className="max-w-lg mx-auto">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="relative p-10 md:p-14 lg:p-16 rounded-3xl border border-brand-accent-gold bg-[#0F0F0F] shadow-[0_0_40px_rgba(255,215,0,0.15)]"
+                    >
+                        <div className="text-center mb-10">
+                            <h3 className="font-serif font-black text-3xl md:text-4xl text-white mb-4">
+                                Plan intensivo PAES
+                            </h3>
+                            <p className="text-sm md:text-base text-emerald-400 font-medium tracking-wide uppercase">
+                                RECUPERACIÓN Y MÁXIMO RENDIMIENTO | Agosto-Noviembre
+                            </p>
+                        </div>
 
-                            <h3 className="font-serif font-bold text-xl md:text-2xl text-white mb-1 leading-tight min-h-[3.5rem] flex items-end">{prog.title}</h3>
-                            <p className="text-xs text-brand-neon font-bold uppercase tracking-wide mb-4 min-h-[2rem] flex items-start">{prog.subtitle}</p>
+                        <div className="text-center mb-10">
+                            <span className="text-5xl md:text-6xl lg:text-7xl font-black text-brand-accent-gold tracking-tight drop-shadow-gold">
+                                $300.000
+                            </span>
+                        </div>
 
-                            {prog.urgency && (
-                                <div className="mb-4">
-                                    <span className={`inline-block px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded-full border animate-pulse ${prog.urgencyVariant === 'yellow'
-                                            ? 'bg-brand-accent-gold/20 text-brand-accent-gold border-brand-accent-gold/30'
-                                            : 'bg-brand-red/20 text-brand-red border-brand-red/30'
-                                        }`}>
-                                        {prog.urgency}
-                                    </span>
-                                </div>
-                            )}
-
-                            <div className="flex items-baseline gap-2 mb-6 border-b border-white/10 pb-4">
-                                <span className="text-2xl lg:text-3xl font-black text-brand-accent-gold">{prog.price}</span>
-                                <span className="text-[10px] text-brand-neon font-bold px-2 py-1 bg-brand-neon/10 rounded-full">{prog.discount}</span>
-                            </div>
-
-                            <ul className="space-y-3 mb-8 grow">
-                                {prog.features.map((feat, j) => (
-                                    <li key={j} className="flex items-start gap-3 text-sm text-gray-300">
-                                        <CheckCircle2 className="w-4 h-4 text-brand-accent-gold shrink-0 mt-0.5" />
-                                        <span className="leading-snug">{feat}</span>
+                        <div className="flex justify-center mb-12">
+                            <ul className="space-y-5">
+                                {features.map((feat, index) => (
+                                    <li key={index} className="flex items-start gap-4 text-base md:text-lg text-gray-300">
+                                        <span className="text-brand-accent-gold font-light">—</span>
+                                        <span className="font-light tracking-wide">{feat}</span>
                                     </li>
                                 ))}
                             </ul>
+                        </div>
 
+                        <div className="text-center">
                             <a
-                                href={prog.link}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    window.fbq('track', 'Lead');
-                                    window.open(prog.link, '_blank');
-                                }}
-                                className="w-full py-4 rounded-xl bg-white text-brand-dark font-bold hover:bg-brand-accent-gold transition-colors flex items-center justify-center gap-2 group-hover:gap-4 duration-300 mt-auto"
+                                href="#"
+                                className="inline-block w-full max-w-sm py-4 rounded-2xl bg-white text-black font-bold text-lg hover:bg-gray-200 transition-all duration-300"
                             >
-                                POSTULAR AL CUPO
-                                <ArrowRight className="w-4 h-4" />
+                                MATRICULA Aquí
                             </a>
-                        </motion.div>
-                    ))}
+                            <p className="text-xs text-gray-500 mt-5 tracking-wide uppercase font-medium">
+                                Pago procesado por Flow
+                            </p>
+                        </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

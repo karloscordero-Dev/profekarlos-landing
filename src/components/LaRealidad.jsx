@@ -6,8 +6,8 @@ const LaRealidad = () => {
     const problems = [
         {
             icon: <XCircle className="w-8 h-8 text-brand-red" />,
-            title: "La Trampa de la Masividad",
-            desc: "La Realidad de la PAES: En un grupo de 5 personas, el feedback es constante. Cada vicio de lectura se identifica y corrige en el acto, algo imposible en la masividad."
+            title: "La realidad de la PAES",
+            desc: "La prueba cada vez es más compleja, con textos que desafían las capacidades lectoras de los estudiantes. Conmigo aprenderás a trabajar las habilidades y los textos desafío del DEMRE"
         },
         {
             icon: <AlertTriangle className="w-8 h-8 text-brand-red" />,
