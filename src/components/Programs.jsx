@@ -64,7 +64,7 @@ const Programs = () => {
                                 rel="noopener noreferrer"
                                 className="inline-block w-full max-w-sm py-4 rounded-2xl bg-white text-black font-bold text-lg hover:bg-gray-200 transition-all duration-300"
                             >
-                                MATRICULA Aquí
+                                MATRICULA AQUÍ
                             </a>
                             <p className="text-xs text-gray-500 mt-5 tracking-wide uppercase font-medium">
                                 Pago procesado por Flow
