@@ -45,10 +45,10 @@ const Programs = () => {
                                 $450.000
                             </span>
                             <span className="text-xs md:text-sm font-semibold tracking-wider text-brand-neon uppercase">
-                                Oferta Junio
+                                Oferta Julio
                             </span>
                             <span className="text-5xl md:text-6xl lg:text-7xl font-black text-brand-accent-gold tracking-tight drop-shadow-gold">
-                                $300.000
+                                $339.000
                             </span>
                         </div>
 
@@ -65,7 +65,7 @@ const Programs = () => {
 
                         <div className="text-center">
                             <a
-                                href="https://www.flow.cl/btn.php?token=bc1388546d6dac96bb19cda8a4eb55a29635bfc5"
+                                href="https://www.flow.cl/btn.php?token=p362de2d2039c515a049fadfba66c378f4cad940"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block w-full max-w-sm py-4 rounded-2xl bg-white text-black font-bold text-lg hover:bg-gray-200 transition-all duration-300"
