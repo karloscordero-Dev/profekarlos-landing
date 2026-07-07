@@ -12,7 +12,7 @@ const Programs = () => {
     return (
         <section id="programas" className="relative py-32 bg-brand-dark">
             <div className="max-w-7xl mx-auto px-6">
-                
+
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
