@@ -44,8 +44,8 @@ const Programs = () => {
                             <span className="text-xl md:text-2xl font-bold text-gray-500 line-through">
                                 $450.000
                             </span>
-                            <span className="text-xs md:text-sm font-semibold tracking-wider text-brand-neon uppercase">
-                                Oferta Julio
+                            <span className="text-xs md:text-sm font-semibold tracking-wider text-brand-red uppercase">
+                                Cursos Llenos
                             </span>
                             <span className="text-5xl md:text-6xl lg:text-7xl font-black text-brand-accent-gold tracking-tight drop-shadow-gold">
                                 $339.000
