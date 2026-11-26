@@ -6,6 +6,7 @@ import Solution from './components/Solution';
 import Testimonials from './components/Testimonials';
 import YouTubeMethod from './components/YouTubeMethod';
 import Programs from './components/Programs';
+import FAQ from './components/FAQ';
 import Social from './components/Social';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <Testimonials />
                 <YouTubeMethod />
                 <Programs />
+                <FAQ />
                 <Social />
             </main>
 

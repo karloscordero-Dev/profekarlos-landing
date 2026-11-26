@@ -18,8 +18,8 @@ const Solution = () => {
                     >
                         <span className="text-brand-neon font-bold tracking-widest uppercase text-xs mb-4 block">Mi Metodología</span>
                         <h2 className="font-serif font-black text-3xl md:text-5xl text-white mb-6 leading-tight">
-                            No hago clases. <br />
-                            Hago <span className="text-brand-accent-gold">Entrenamiento Estratégico</span>.
+                            Mis clases son más que clases. <br />
+                            Es <span className="text-brand-accent-gold">entrenamiento estratégico</span>.
                         </h2>
                         <p className="text-gray-400 text-base font-light mb-8">
                             Ayudo a construir una estructura mental a prueba de balas. Preparo a las futuras élites universitarias con un sistema probado.

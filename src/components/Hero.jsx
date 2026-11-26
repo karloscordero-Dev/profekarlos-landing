@@ -27,7 +27,7 @@ const Hero = () => {
                 >
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-neon/20 bg-brand-neon/5 mb-6">
                         <span className="w-2 h-2 rounded-full bg-brand-neon animate-pulse"></span>
-                        <span className="text-brand-neon text-xs font-bold uppercase tracking-widest">Admisión 2026 Abierta</span>
+                        <span className="text-brand-neon text-xs font-bold uppercase tracking-widest">Admisión 2027 Abierta</span>
                     </div>
 
                     <h1 className="font-serif font-black text-4xl md:text-6xl lg:text-7xl leading-[1.1] text-white tracking-tight mb-2">
@@ -47,7 +47,7 @@ const Hero = () => {
                             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                         >
                             <p className="text-gray-400 text-lg md:text-xl font-light leading-relaxed border-l-2 border-brand-red/50 pl-6 mb-8">
-                                Preparación estratégica con el Profe Karlos (U. de Chile). Grupos de máximo 5 alumnos para un feedback personalizado que el sistema masivo es incapaz de darte.
+                                Preparación estratégica con el Profe Karlos (U. de Chile). Clases <span className="text-white font-medium">100% online en vivo y todas quedan grabadas</span>, con <span className="text-white font-medium">máximo 10 alumnos por grupo</span> para un feedback personalizado que el sistema masivo es incapaz de darte.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-5">
@@ -85,7 +85,7 @@ const Hero = () => {
                                     </div>
                                 ))}
                             </div>
-                            <p>Solo <span className="text-brand-neon">15 cupos</span> por grupo.</p>
+                            <p>Máximo <span className="text-brand-neon">10 alumnos por grupo</span>.</p>
                         </motion.div>
                     </div>
 

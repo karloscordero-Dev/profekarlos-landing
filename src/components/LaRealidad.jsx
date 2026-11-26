@@ -6,8 +6,8 @@ const LaRealidad = () => {
     const problems = [
         {
             icon: <XCircle className="w-8 h-8 text-brand-red" />,
-            title: "La realidad de la PAES",
-            desc: "La prueba cada vez es más compleja, con textos que desafían las capacidades lectoras de los estudiantes. Conmigo aprenderás a trabajar las habilidades y los textos desafío del DEMRE"
+            title: "El Nuevo Estándar DEMRE",
+            desc: "La prueba cada vez es más compleja, con textos que desafían las capacidades lectoras de los estudiantes. Conmigo aprenderás a trabajar las habilidades y los textos desafío del DEMRE."
         },
         {
             icon: <AlertTriangle className="w-8 h-8 text-brand-red" />,

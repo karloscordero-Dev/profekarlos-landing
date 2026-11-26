@@ -8,7 +8,7 @@ import { Instagram, Youtube, Video } from 'lucide-react'; // Simulating TikTok w
 
 const Social = () => {
     return (
-        <section className="bg-slate-900 border-t border-white/5 py-20 relative overflow-hidden">
+        <section id="redes" className="bg-slate-900 border-t border-white/5 py-20 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
 
                 <h2 className="font-serif font-bold text-3xl text-white mb-4 italic">Conóceme más en mis redes sociales</h2>

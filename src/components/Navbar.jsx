@@ -33,7 +33,8 @@ const Navbar = () => {
                         {[
                             { name: 'La Realidad', link: '#la-realidad' },
                             { name: 'Metodología', link: '#metodologia' },
-                            { name: 'Programas', link: '#programas' }
+                            { name: 'Programas', link: '#programas' },
+                            { name: 'FAQ', link: '#faq' }
                         ].map((item) => (
                             <a key={item.name} href={item.link} className="relative group">
                                 <span className="group-hover:text-brand-neon transition-colors duration-300">{item.name}</span>
