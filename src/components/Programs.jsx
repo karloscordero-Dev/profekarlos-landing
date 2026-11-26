@@ -13,7 +13,7 @@ const Programs = () => {
             price: '$339.000',
             monthlyEquivalent: 'Equivale a $84.750 / mes (4 meses)',
             features: [
-                '2 sesiones en vivo por semana (70 a 90 min c/u · 30 a 32 sesiones).',
+                '2 sesiones en vivo por semana (70 a 90 min c/u · 32 sesiones).',
                 'Clases 100% online y todas quedan grabadas.',
                 'Ensayos mensuales PAES con app de corrección automática por habilidad.',
                 'Material exclusivo PAES 2027 entregado clase a clase.',
@@ -32,7 +32,7 @@ const Programs = () => {
             price: '$449.000',
             monthlyEquivalent: 'Equivale a $56.125 / mes (8 meses)',
             features: [
-                '1 sesión en vivo por semana (70 a 90 min c/u · aprox. 34 sesiones).',
+                '1 sesión en vivo por semana (70 a 90 min c/u · más de 34 sesiones).',
                 'Clases 100% online y todas quedan grabadas.',
                 'Mayor cantidad de ensayos PAES con app de corrección automática por habilidad.',
                 'Material exclusivo PAES 2027 entregado clase a clase.',
