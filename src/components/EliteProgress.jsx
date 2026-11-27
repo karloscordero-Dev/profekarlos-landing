@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import videoSource from '../assets/video/animacion_puntajes.mov';
+import videoSource from '../assets/video/animacion_puntajes.mp4';
 
 const EliteProgress = () => {
     return (
